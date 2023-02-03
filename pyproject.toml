@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "goose-kafka"
+version = "0.1.0"
+description = "Helper library to simplify creating Kafka Consumer services"
+authors = ["Neil Barker <neilabarker@icloud.com>"]
+readme = "README.md"
+packages = [{include = "goose_kafka"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+confluent-kafka = "^1.9.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+flake8 = "5.0.4"
+isort = "^5.10.1"
+mypy = "^0.982"
+pytest = "^5.2"
+pytest-cov = "^4.0.0"
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
